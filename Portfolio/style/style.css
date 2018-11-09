@@ -1,0 +1,172 @@
+body {
+    margin: 0px;
+
+
+}
+
+
+html {
+    font-family: "Arial Nova";
+}
+
+ul {
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    border-bottom-left-radius: 5%;
+    transition: background-color 500ms linear;
+    width: 100vw;
+
+
+
+
+
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 1;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+#page-wrap {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+p, ul, h1 {
+    margin: 0 0 1rem 0;
+}
+.parallax {
+    background-image: url("bg.jpg");
+    min-height: 425px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.test {
+
+
+
+    background-image: url("bg2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+.zoom {
+
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+
+}
+.fade {
+
+    position: relative;
+    opacity: 1;
+    font-family: 'helvetica';
+}
+.navbar-fixed-top.scrolled {
+    background-color: #333333 !important;
+    width: 100vw;
+    transition: background-color 1000ms linear;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    text-align:center;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.wave {
+    animation: myWave 1s infinite;
+
+}
+
+.wave:hover {
+ all: unset;
+}
+
+@keyframes myWave {
+    33% { transform: scale(1);}
+    66% { transform: scale(1.1);}
+    100% { transform: scale(1);}
+}
+
+.shadow {
+    transition: box-shadow .2s;
+}
+.shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
